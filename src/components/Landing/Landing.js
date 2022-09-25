@@ -97,32 +97,6 @@ function Landing() {
                                 />
                             </a>
                         )}
-                        {socialsData.twitter && (
-                            <a
-                                href={socialsData.twitter}
-                                target='_blank'
-                                rel='noreferrer'
-                            >
-                                <FaTwitter
-                                    className='landing--social twitter-icon'
-                                    style={{ color: theme.primary }}
-                                    aria-label='Twitter'
-                                />
-                            </a>
-                        )}
-                        {socialsData.facebook && (
-                            <a
-                                href={socialsData.facebook}
-                                target='_blank'
-                                rel='noreferrer'
-                            >
-                                <FaFacebook
-                                    className='landing--social facebook-icon'
-                                    style={{ color: theme.primary }}
-                                    aria-label='facebook'
-                                />
-                            </a>
-                        )}
                     </div>
                 </div>
                 <img
@@ -146,9 +120,8 @@ function Landing() {
                         <h1>{headerData.name}</h1>
                         <Typed
                             strings={[
-                                'Backend Developer',
                                 'Frontend Developer',
-                                'Fullstack Developer']}
+                            ]}
                             typeSpeed={40}
                             backSpeed={50}
                             className="typed-header"
